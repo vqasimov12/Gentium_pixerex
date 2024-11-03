@@ -29,13 +29,16 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <title>Document</title>
+    <title>Gentium</title>
   </head>
   <body>
     <nav>
       <div class="navbar">
         <h1>Gentium.</h1>
-        <ul>
+        <div id="hamburger">
+          <i class="fas fa-bars"></i>
+        </div>
+        <ul id="navLinks">
           <li>
             <a href="#hd"
               >Home
@@ -78,30 +81,70 @@
               <hr
             /></a>
           </li>
-          <li>
-            <a href="">
-              <i class="fa-solid fa-magnifying-glass"></i>
-              <hr />
-            </a>
+          <li id="search">
+            <a href=""
+              ><i class="fa-solid fa-magnifying-glass"></i>
+              <hr
+            /></a>
           </li>
         </ul>
       </div>
     </nav>
 
-    <section class="header">
-      <div>
+    <section id="hd" class="header">
+      <div class="head1">
         <div></div>
-        <div><img src="./assets/images/2.PNG" alt=""></div>
+        <div><img src="./assets/images/2.PNG" alt="" /></div>
       </div>
-      <div class="headContent">
-          <hr>
-     
-        <h1>We're a digital agency.</h1>
-        <button class="floatingBtn" style="min-width: 200px;">
-          <div></div>
-          <p style="color: white">Getting Started</p>
-        </button>
 
+      <div class="headContent">
+        <hr />
+        <h1>We're a digital agency.</h1>
+        <div class="btnDiv">
+          <button class="floatingBtn" style="min-width: 200px !important">
+            <div></div>
+            <p style="color: white; margin-left: -10px; width: 100%">
+              Getting Started
+            </p>
+          </button>
+        </div>
+      </div>
+
+      <div class="headerContainer">
+        <div style="background-color: #e9204f" class="headItem">
+          <i style="color: white" class="fa-solid fa-chart-simple"></i>
+          <h3>Future Vision</h3>
+          <hr style="border-color: white; margin-top: 15px" />
+          <p style="margin-top: 40px; line-height: 26px">
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page.
+          </p>
+        </div>
+    
+        <div class="headItem">
+          <i class="fa-solid fa-rocket"></i>
+          <h3>Product Design</h3>
+          <hr style="border-color: white; margin-top: 15px" />
+          <p style="margin-top: 40px; line-height: 26px">
+            There are many variations of passages of available, but the majority
+            alteration in some form.
+          </p>
+          <hr class="line"/>
+
+        </div>
+    
+        <div id="item3">
+          <div style="position: absolute; z-index: 2" class="headItem">
+            <i class="fa-solid fa-chart-pie"></i>
+            <h3>Innovative Solutions</h3>
+            <hr style="border-color: white; margin-top: 15px" />
+            <p style="margin-top: 40px; line-height: 26px">
+              It is a long established fact that a reader will be distracted by
+              the readable content of a page.
+            </p>
+          </div>
+          <div class="back"></div>
+        </div>
       </div>
     </section>
 
@@ -469,5 +512,13 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      const hamburger = document.getElementById("hamburger");
+      hamburger.addEventListener("click", () => {
+        const navLinks = document.getElementById("navLinks");
+        navLinks.classList.toggle("active");
+      });
+    </script>
   </body>
 </html>
