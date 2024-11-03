@@ -1,0 +1,461 @@
+
+.works {
+    width: 74%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 60px;
+  }
+  
+  .workHead {
+    margin-top: 90px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .workHead h2 {
+    font-size: 47px;
+    letter-spacing: -1.9px;
+    font-weight: 600;
+  }
+  
+  .horizontal {
+    width: 50px;
+    rotate: 90deg;
+    margin-top: 40px;
+    justify-self: center;
+  }
+  
+  .wgrid {
+    display: grid;
+    align-items: center;
+    justify-content: space-between;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .wgrid div:nth-child(2) {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+  
+  .workHead p {
+    color: #e9204f;
+    letter-spacing: -0.72px;
+    font-size: 14.6px;
+    font-weight: bold;
+    line-height: 17px;
+  }
+  
+  .floatingBtn {
+    height: 50px;
+    background-color: transparent;
+    border-color: #e9204f;
+    position: relative;
+    overflow: hidden;
+    width: 150px;
+    cursor: pointer;
+    transition: all 0.3s ease-out !important;
+    font-family: "Roboto", sans-serif;
+    min-width: 150px;
+  }
+  
+  .floatingBtn div {
+    width: 0;
+    background-color: #e9204f;
+    position: absolute;
+    z-index: 1;
+    top: -10%;
+    height: 100px;
+    transition: all 0.3s ease-out !important;
+  }
+  
+  .floatingBtn p {
+    margin: 10px 37px;
+    position: absolute;
+    z-index: 2;
+    color: black;
+    top: 10%;
+    left: 3%;
+    font-size: 17px;
+    font-weight: bold;
+  }
+  
+  .floatingBtn:hover div {
+    width: 100%;
+    transition: all 0.3s ease-out !important;
+  }
+  
+  .floatingBtn:hover p {
+    color: white;
+    transition: all 0.3s ease-out !important;
+  }
+  
+  .designs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    margin-top: 60px;
+    padding: 0 10px;
+  }
+  
+  .designContainer {
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    min-width: 400px;
+  }
+  
+  .designItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 450px;
+    height: fit-content;
+    position: relative;
+    overflow: hidden;
+    gap: 5px;
+    min-height: 430px;
+    cursor: pointer;
+  }
+  
+  .designItem img {
+    width: 100%;
+    filter: grayscale(100%);
+    transition: ease-out 400ms;
+    height: 450px;
+  }
+  
+  .designItem div {
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    color: white;
+    gap: 5px;
+    height: 450px;
+    transition: ease-out 400ms;
+    opacity: 0;
+  }
+  
+  .inlineDiv h2,
+  .inlineDiv p {
+    margin-left: -20px;
+    font-family: Poppins, sans-serif;
+    transition: ease-out 400ms;
+  }
+  
+  .frontDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 57% 0 0 0;
+    opacity: 100% !important;
+    background-color: rgba(116, 116, 116, 0.3);
+    gap: 20px !important;
+  }
+  
+  .icon {
+    font-size: 40px;
+    margin-top: -20px;
+    font-weight: 600;
+    visibility: hidden;
+    transition: ease-out 300ms;
+  }
+  
+  .icon:hover {
+    color: white;
+  }
+  
+  .designItem:hover img {
+    transform: scale(1.21);
+    filter: none;
+    transition: 700ms;
+    filter: brightness(40%);
+  }
+  
+  .designItem:hover .frontDiv {
+    transform: translateY(-20px);
+  }
+  
+  .designItem:hover .icon {
+    visibility: visible;
+    transition: ease-out 200ms;
+  }
+  
+  .designItem:hover .inlineDiv {
+    opacity: 100%;
+  }
+  
+  .designItem:hover .frontDiv {
+    background-color: transparent;
+  }
+  
+  .designItem:hover .inlineDiv h2 {
+    margin-left: 20px;
+    transition: ease-out 400ms;
+  }
+  
+  .designItem:hover .inlineDiv p {
+    margin-left: 20px;
+    transition: ease-out 400ms;
+  }
+  
+  .options {
+    height: 30px;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+  }
+  
+  .option {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: 1px solid #747474;
+  }
+  
+  .option:nth-child(1) {
+    background-color: #e9204f;
+    border-color: #e9204f;
+  }
+  
+  .option:hover {
+    scale: 1.1;
+    cursor: pointer;
+  }
+  
+  .about {
+    display: flex;
+    width: 74%;
+  }
+  
+  .aboutHead {
+    margin-top: 90px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .cont h2 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58px;
+  }
+  
+  .aboutHead p {
+    color: #e9204f;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 17px;
+  }
+  
+  .cont {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .aboutHead div p {
+    color: #747474;
+    line-height: 26px;
+    width: 60%;
+    text-transform: none;
+    font-size: 16.5px;
+  }
+  
+  .about2 {
+    width: 74%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  
+  .aboutContainer1 {
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+    min-width: 400px;
+    height: fit-content;
+  }
+  
+  .item1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    overflow: hidden;
+    gap: 5px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: ease-out 400ms;
+  }
+  
+  .item1:nth-child(1) {
+    grid-row: span 2;
+    grid-column: span 2;
+  }
+  
+  .item1 p {
+    position: absolute;
+    z-index: 1;
+    color: white;
+    bottom: 20px;
+    left: 20px;
+    font-size: 15px;
+    letter-spacing: -0.01px;
+    font-family: "Times New Roman", Times, serif;
+  }
+  .item1 h2 {
+    position: absolute;
+    z-index: 1;
+    color: white;
+    bottom: 40px;
+    left: 20px;
+    font-size: 20px;
+    letter-spacing: -0.04px;
+    font-family: Poppins, sans-serif;
+  }
+  
+  .item1 img {
+    filter: grayscale();
+    transition: ease-out 400ms;
+  }
+  
+  .item1:hover img {
+    filter: grayscale(1);
+    filter: none;
+    filter: brightness(50%);
+    transform: scale(1.1);
+    transition: ease-out 400ms;
+  }
+  
+  .aboutContainer2 {
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    min-width: 400px;
+    height: fit-content;
+    margin-top: 70px;
+  }
+  
+  .item2 {
+    width: 90%;
+    gap: 30px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .item2 p {
+    font-size: 15.6px;
+    line-height: 26px;
+  }
+  
+  .item2 h2 {
+    font-size: 22px;
+    line-height: 28px;
+  }
+  
+  .client {
+    width: 74%;
+    height: fit-content;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    min-width: 430px;
+    height: fit-content;
+    margin-top: 100px;
+  }
+  
+  .client1 {
+    height: 620px;
+    position: relative;
+    overflow: hidden;
+    width: 460px;
+  }
+  
+  .client1 img {
+    position: absolute;
+    z-index: 2;
+    height: 600px;
+    left: 0;
+    top: 0;
+  }
+  
+  .client1 div {
+    height: 100px;
+    min-width: 100px;
+    position: absolute;
+    z-index: 1;
+    bottom: 0px;
+    background-color: #e9204f;
+    right: 0;
+  }
+  
+  .client2 {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-self: flex-start;
+    padding: 50px 0 0 0;
+    font-family: "Inter", sans-serif;
+  }
+  
+  .client2 h2 {
+    font-size: 50px;
+    letter-spacing: -2px;
+    line-height: 60px;
+  }
+  
+  .text1 {
+    color: #e9204f;
+    font-size: 14.6px;
+    letter-spacing: -0.72px;
+    line-height: 17px;
+    font-weight: bold;
+  }
+  
+  .text2 {
+    color: #747474;
+    font-size: 22px;
+    line-height: 30px;
+    width: 100%;
+  }
