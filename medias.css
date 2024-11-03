@@ -1,0 +1,397 @@
+
+@media (max-width: 700px) {
+    .designContainer {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .designItem:nth-child(2) {
+      margin: 20px 0;
+    }
+  
+    .aboutContainer2 {
+      grid-template-columns: repeat(1, 1fr) !important;
+    }
+  
+    .client {
+      grid-template-columns: repeat(1, 1fr);
+      padding: 10px;
+    }
+  
+    .client1,
+    .client2 {
+      padding: 20px;
+    }
+  
+    .foot2 {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  
+  @media (max-width: 460px) {
+    .news {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(6, 1fr);
+      height: fit-content;
+      gap: 30px;
+      justify-content: center;
+      width: 70%;
+    }
+    .news img {
+      width: 80%;
+    }
+  
+    .headContent h1 {
+      font-size: 40px;
+    }
+  
+    body {
+      padding: 10px;
+    }
+    .wgrid {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .wgrid div:nth-child(2) {
+      justify-content: left;
+      margin-left: -50px;
+    }
+
+    .aboutContainer2{
+        padding-left: 20px;
+    }
+    .aboutContainer1{
+        padding: 10px;
+    }
+
+    .cont p{
+        width: 100%;
+    }
+    .client1{
+        padding: 50px;
+    }
+
+    .client2{
+        padding-left: 50px;
+    }
+
+    .client2 h2{
+        font-size: 44px;
+        margin-left: 2px;
+    }
+    .text2{
+        padding:10px 20px 10px 10px;
+    }
+    .blog h2{
+        font-size: 40px;
+    }
+
+    .designContainer{
+        padding:10px 10px 10px 20px;
+    }
+  }
+  
+  @media (min-width: 350px) and (max-width: 460px) {
+    .designs {
+      padding: 10px;
+    }
+
+    .serviceItems{
+        margin-left: -15%;
+    }
+  }
+  @media (min-width: 460px) and (max-width: 770px) {
+    .news {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      height: fit-content;
+      gap: 30px 20px;
+      justify-content: center;
+      width: 70%;
+    }
+  
+    .headContent {
+      padding-left: 10px;
+    }
+  
+    .headContent h1 {
+      width: 60%;
+      font-size: 50px;
+      text-wrap: wrap;
+    }
+
+    .header {
+        min-height: 1700px !important;
+      }
+      .content2 {
+        display: grid;
+        align-items: center;
+        justify-content: space-between;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px !important;
+        margin-top: 30px !important;
+      }
+    
+      .headItem {
+        height: 325px !important;
+        width: 90%;
+        background-color: #1b1b1b;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 100px 40px 60px 40px;
+        gap: 5px;
+        transition: ease-out 400ms;
+      }
+    
+      .back,
+      .line {
+        display: none;
+      }
+  }
+  
+  @media (max-width: 1200px) {
+    .foot1 {
+      grid-template-columns: repeat(1, 1fr);
+      align-items: center;
+      gap: 10px !important;
+      margin-top: 40px;
+      width: 300px;
+      height: 200px;
+    }
+  
+    .icons,
+    .foot1 h1 {
+      height: 60px;
+      justify-self: center;
+    }
+    .floatingBtn {
+      margin-left: 50px;
+    }
+  }
+  
+  @media (min-width: 770px) and (max-width: 1280px) {
+    .news {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      height: fit-content;
+      gap: 30px 20px;
+      justify-content: center;
+      width: 70%;
+    }
+  
+    .foot3 div {
+      width: 10%;
+    }
+  }
+  
+  
+  @media (max-width: 770px) {
+    .header {
+      min-height: 1700px !important;
+    }
+    .content2 {
+      display: grid;
+      align-items: center;
+      justify-content: space-between;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 30px;
+      margin-top: 60px;
+    }
+  
+    .headItem {
+      height: 330px;
+      width: 90%;
+      background-color: #1b1b1b;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 100px 40px 60px 40px;
+      gap: 5px;
+      transition: ease-out 400ms;
+    }
+  
+    .back,
+    .line {
+      display: none;
+    }
+  }
+  @media (min-width: 770px) and (max-width: 1261px) {
+    .header {
+      min-height: 1800px !important;
+    }
+  
+    .content2 {
+      display: grid;
+      align-items: center;
+      justify-content: space-between;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 30px;
+      margin-top: 60px;
+    }
+  
+    .headItem {
+      height: 376px;
+      width: 90%;
+      background-color: #1b1b1b;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 100px 40px 60px 40px;
+      gap: 10px;
+      transition: ease-out 400ms;
+    }
+  
+    .back,
+    .line {
+      display: none;
+    }
+  }
+  
+  
+  @media (max-width: 1000px) {
+    #navLinks {
+      display: none;
+      flex-direction: column;
+      gap: 15px;
+      position: absolute;
+      top: 70px;
+      right: 50px;
+      background-color: black;
+      width: 100px;
+      padding: 0;
+      text-align: center;
+    }
+    #navLinks.active {
+      display: flex;
+    }
+  
+    #hamburger {
+      display: block;
+    }
+    #search i {
+      margin-left: 45px;
+      /* justify-self: center; */
+    }
+  
+    .cont {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      /* padding-left: 60px; */
+    }
+  
+    .cont div {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: left;
+      width: 100%;  
+
+    }
+
+    .cont p{
+        min-width: 300px;
+    }
+  }
+  
+  
+  @media (min-width: 250px) and (max-width: 460px) {
+    .content1 h1{
+      font-size: 32px;
+      width: 100%;
+    }
+  
+  }
+  
+  @media (min-width: 700px) and (max-width: 1200px) {
+    .designContainer {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+    .designItem:nth-child(2) {
+      margin: 20px 0;
+    }
+  
+    .aboutContainer1 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .client {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  
+    .client1 {
+      width: 90%;
+    }
+  
+    .client1 img {
+      width: 97%;
+      height: calc(100%-20px);
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media (min-width: 890px) and (max-width: 950px) {
+    .serviceItems {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  
+  @media (min-width: 1020px) {
+    .aboutContainer1 {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .foot3 {
+      gap: 10px;
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .foot3 ul li {
+      min-width: auto !important;
+    }
+  }
+  
+  @media (max-width: 1020px) {
+    .aboutContainer1 {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .item1:nth-child(1) {
+      grid-row: span 1;
+      grid-column: span 1;
+    }
+  
+    .item1:nth-child(2) {
+      margin-top: -1400px 0;
+    }
+  
+    .item1 img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .item1 {
+      width: 100%;
+      height: fit-content;
+    }
+  
+    .aboutContainer2 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+  }
+  
+  @font-face {
+    font-family: "AvantGarde";
+    src: url("./assets/fonts/AvantGarde-Bold.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+  }
+  

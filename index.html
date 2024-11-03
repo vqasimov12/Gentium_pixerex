@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./medias.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -92,61 +93,63 @@
     </nav>
 
     <section id="hd" class="header">
-      <div class="head1">
-        <div></div>
-        <div><img src="./assets/images/2.PNG" alt="" /></div>
-      </div>
-
+      <div class="head"></div>
       <div class="headContent">
-        <hr />
-        <h1>We're a digital agency.</h1>
-        <div class="btnDiv">
-          <button class="floatingBtn" style="min-width: 200px !important">
-            <div></div>
-            <p style="color: white; margin-left: -10px; width: 100%">
-              Getting Started
-            </p>
-          </button>
+        <div class="content1">
+          <hr />
+          <h1>We're a digital agency.</h1>
+          <div class="btnDiv">
+            <button class="floatingBtn" style="min-width: 200px !important">
+              <div></div>
+              <p style="color: white; margin-left: -10px; width: 100%">
+                Getting Started
+              </p>
+            </button>
+          </div>
         </div>
-      </div>
-
-      <div class="headerContainer">
-        <div style="background-color: #e9204f" class="headItem">
-          <i style="color: white" class="fa-solid fa-chart-simple"></i>
-          <h3>Future Vision</h3>
-          <hr style="border-color: white; margin-top: 15px" />
-          <p style="margin-top: 40px; line-height: 26px">
-            It is a long established fact that a reader will be distracted by
-            the readable content of a page.
-          </p>
-        </div>
-    
-        <div class="headItem">
-          <i class="fa-solid fa-rocket"></i>
-          <h3>Product Design</h3>
-          <hr style="border-color: white; margin-top: 15px" />
-          <p style="margin-top: 40px; line-height: 26px">
-            There are many variations of passages of available, but the majority
-            alteration in some form.
-          </p>
-          <hr class="line"/>
-
-        </div>
-    
-        <div id="item3">
-          <div style="position: absolute; z-index: 2" class="headItem">
-            <i class="fa-solid fa-chart-pie"></i>
-            <h3>Innovative Solutions</h3>
+        <div class="content2">
+      
+          <div class="headItem" style="background-color: #e9204f">
+            <i style="color: white" class="fa-solid fa-chart-simple"></i>
+            <h3 style="font-size: 24px; letter-spacing: -0.8px">
+              Future Vision.
+            </h3>
             <hr style="border-color: white; margin-top: 15px" />
-            <p style="margin-top: 40px; line-height: 26px">
+            <p style="margin-top: 40px">
               It is a long established fact that a reader will be distracted by
               the readable content of a page.
             </p>
           </div>
-          <div class="back"></div>
+
+          <div class="headItem" style="position: relative;">
+            <i class="fa-solid fa-rocket"></i>
+            <h3 style="font-size: 24px; letter-spacing: -0.8px">
+              Product Design.
+            </h3>
+            <hr style="border-color: white; margin-top: 15px" />
+            <p style="margin-top: 40px">
+              There are many variations of passages of available, but the
+              majority alteration in some form.
+            </p>
+            <hr class="horizontal line" />
+          </div>
+
+          <div class="headItem" style="position: relative;">
+            <i class="fa-solid fa-chart-pie"></i>
+            <h3 style="font-size: 24px; letter-spacing: -0.8px">
+              Inovative Solutions.
+            </h3>
+            <hr style="border-color: white; margin-top: 15px" />
+            <p style="margin-top: 40px">
+              The generated Lorem Ipsum is therefore always free from
+              repetition, injected humour.
+            </p>
+            <div  class="back"></div>
+          </div>
         </div>
       </div>
     </section>
+    <div name="temp" style="height: 1000px; background-color: #000000;"></div>
 
     <section id="serv" class="Services">
       <hr />
@@ -213,14 +216,19 @@
       <hr class="horizontal" />
       <div class="workHead">
         <hr />
-        <div>
-          <h2>Works.</h2>
+        <div class="wgrid">
+          <div>
+
+            <h2>Works.</h2>
+          </div>
+          <div>
           <button class="floatingBtn">
             <div></div>
             <p>View All</p>
           </button>
         </div>
         <p>THINGS WE'VE MADE</p>
+      </div>
       </div>
     </section>
 
@@ -270,15 +278,19 @@
     <section id="abt" class="about">
       <div class="aboutHead">
         <hr />
+        <div class="cont">
         <div>
           <h2>About.</h2>
+          </div>
+          <div>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
             corrupti temporibus fuga earum asperiores, alias excepturi sit.
             Impedit, fugit laudantium.
           </p>
         </div>
-        <p>WE'RE MORE THAN A DIGITAL AGENCY</p>
+      </div>
+      <p>WE'RE MORE THAN A DIGITAL AGENCY</p>
       </div>
     </section>
 
@@ -466,7 +478,7 @@
             style="min-width: 215px; margin-left: 50px"
           >
             <div></div>
-            <p style="color: white">Make an enquiry!</p>
+            <p style="color: white;width: 100% ;margin-left: -8px; ">Make an enquiry!</p>
           </button>
         </div>
 
