@@ -395,6 +395,13 @@
   
   }
   
+@media(min-width:1280px)
+{
+  .serviceItems{
+    grid-template-columns: repeat(3,1fr);
+  }
+}
+
   @font-face {
     font-family: "AvantGarde";
     src: url("./assets/fonts/AvantGarde-Bold.woff2") format("woff2");
